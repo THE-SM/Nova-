@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova AI</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4712/4712109.png">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-header">Nova</div>
+        <div class="history" id="history"></div>
+    </aside>
+
+    <!-- MAIN CHAT -->
+    <main class="chat-area">
+
+        <!-- HEADER -->
+        <header class="chat-header">
+            Nova AI Assistant
+        </header>
+
+        <!-- CHAT CONTAINER -->
+        <div class="chat-container">
+            <section class="chat-box" id="chatBox"></section>
+        </div>
+
+        <!-- INPUT AREA -->
+        <footer class="chat-input">
+
+            <textarea 
+                id="userInput" 
+                placeholder="Message Nova…" 
+                rows="1"
+            ></textarea>
+
+            <!-- SEND -->
+            <button class="send-btn" onclick="sendMessage()">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+            <!-- SPEAK TOGGLE -->
+            <button id="speakBtn" onclick="toggleSpeak()">
+                <i class="fa-solid fa-volume-high"></i>
+            </button>
+
+            <!-- HANDS FREE (JARVIS) -->
+            <button id="jarvisBtn" onclick="toggleJarvis()">
+                <i class="fa-solid fa-robot"></i>
+            </button>
+
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
